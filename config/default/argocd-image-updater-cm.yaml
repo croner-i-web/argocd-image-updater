@@ -5,3 +5,10 @@ metadata:
   labels:
     app.kubernetes.io/name: argocd-image-updater-config
     app.kubernetes.io/part-of: argocd-image-updater-controller
+data:
+  registries.conf: |
+    registries:
+      - name: aws-ecr
+        apiUrl: https://543115429274.dkr.ecr.eu-west-1.amazonaws.com
+        prefix: 543115429274.dkr.ecr.eu-west-1.amazonaws.com
+        credentials: aws
