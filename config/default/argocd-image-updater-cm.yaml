@@ -9,7 +9,7 @@ data:
   registries.conf: |
     registries:
       - name: aws-ecr
-        prefix: 543115429274.dkr.ecr.eu-west-1.amazonaws.com/library-drupal-test
-        api: ecr
-        region: eu-west-1
+        # Keep prefix to the ECR REGISTRY HOST ONLY for v1.1.1
+        # (the repository name comes from the container image reference in your Deployment)
+        prefix: 543115429274.dkr.ecr.eu-west-1.amazonaws.com
         credentials: aws
