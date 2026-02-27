@@ -9,9 +9,6 @@ data:
   registries.conf: |
     registries:
       - name: aws-ecr
-        # Required by v1.1.1
-        apiUrl: https://543115429274.dkr.ecr.eu-west-1.amazonaws.com
-        # Match the registry host your images use (host only is fine in this version)
+        apiURL: https://543115429274.dkr.ecr.eu-west-1.amazonaws.com
         prefix: 543115429274.dkr.ecr.eu-west-1.amazonaws.com
-        # Tell the controller to use AWS (IRSA) for credentials
         credentials: aws
